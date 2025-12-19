@@ -8,7 +8,6 @@ class Solution {
         HashSet<Character> visited = new HashSet<>();
 
         for (int i = 0; i < s.length(); i++){
-            if (maxLength > (s.length() - i)) break;
             while (visited.contains(s.charAt(i))){
                 visited.remove(s.charAt(j));
                 j++;
